@@ -36,7 +36,7 @@ productRouter.post("/", async (req, res, next) => {
       const query = q2m(req.query)
   
       const { total, products } = await ProductModel.findProductsWithCategories(query)
-      // No matter how you apply skip, limit, sort methods, the order will always be SORT, SKIP, LIMIT
+    
       res.send({ links: query.links("/products", total), total, products })
   
     } catch (error) {

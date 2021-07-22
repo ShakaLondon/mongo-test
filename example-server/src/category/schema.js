@@ -10,7 +10,7 @@ const CategorySchema = new Schema(
       }
     },
     {
-      timestamps: true, // adding createdAt and modifiedAt automatically
+      timestamps: true, 
     }
   )
   
